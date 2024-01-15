@@ -1,5 +1,13 @@
 /* Mulish font input from google  */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+/* CSS variable start  */
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #131318;
+  --white-color:#fff;
+}
+/* CSS variable end  */
+
 /* Rest CSS start  */
 * {
   margin: 0;
@@ -14,8 +22,8 @@ a {
   text-decoration: none;
 }
 input {
-  border: none;
-  outline: none;
+  /* border: none;
+  outline: none; */
 }
 header,
 footer,
@@ -24,17 +32,192 @@ section {
   float: left;
   width: 100%;
 }
+.mt-100 {
+  margin-top: 100px;
+}
 .container {
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
+  border: 1px solid #ff5400;
 }
+body {
+  font-family: "Mulish", sans-serif;
+}
+
 /* Rest CSS end  */
 /* Home page css start  */
 /* Header css start  */
+.header-section {
+  margin-top: 30px;
+}
+.header-section .header-logo-menu-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo a.logo {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: var(--secondary-color);
+}
+.brand-logo .logo img {
+  height: 56px;
+  margin-right: 16px;
+}
+.brand-logo .logo span {
+  margin-left: 10px;
+  color: var(--primary-color);
+}
+
+/* Menu area css start  */
+.desk-nav {
+  display: flex;
+  gap: 44px;
+}
+.desk-nav li a {
+  color: var(--secondary-color);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.desk-nav li a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+/* Menu area css end  */
+/* Header Banner css start  */
+.header-banner {
+    margin-top: 49px;
+background-image: url('../images/header-img.jpg');
+height: 500px;}
+.banner-overlay{
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.header-banner .banner-content-wrap{
+    color: var(--white-color);
+    text-align: center;
+    width: 800px;
+}
+.header-banner .banner-content-wrap .banner-title{
+    color: var(--white-color);
+font-family: Mulish;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-bottom: 24px;
+}
+.header-banner .banner-content-wrap .body-pera{
+    width: calc(100% - 124px);
+    display: block;
+    margin-bottom: 48px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.header-banner .banner-content-wrap .search-group{
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+height: 84px;
+display:block;
+}
+/* Header Banner css end  */
 /* Header css end  */
 /* Home page css end  */
 
-body {
-  font-family: "Mulish", sans-serif;
+@media screen and (max-width: 600px) {
+  .desk-nav-area {
+    display: none;
+  }
+  .container {
+    width: calc(100% - 24px);
+  }
+  .brand-logo .logo img {
+    height: 35px;
+  }
+  .brand-logo {
+    width: calc(100% - 80px);
+  }
+  .brand-logo a.logo {
+    font-size: 21px;
+  }
+  .mbl-nav {
+    font-size: 21px;
+  }
+  .mbl-nav:hover {
+    color: var(--primary-color);
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .desk-nav-area {
+    display: none;
+  }
+  .mbl-nav {
+    font-size: 25px;
+  }
+  .mbl-nav:hover {
+    color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .desk-nav-area {
+    display: none;
+  }
+  .container {
+    width: calc(100% - 24px);
+  }
+  .mbl-nav {
+    font-size: 30px;
+  }
+  .mbl-nav:hover {
+    color: var(--primary-color);
+  }
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .mobile-nav-area {
+    display: none;
+  }
+  .container {
+    width: calc(100% - 24px);
+  }
+  .mobile-nav-area {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mobile-nav-area {
+    display: none;
+  }
+  .container {
+    max-width: 1170px;
+  }
+  .mobile-nav-area {
+    display: none;
+  }
 }
