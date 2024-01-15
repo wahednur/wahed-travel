@@ -1,0 +1,40 @@
+/* Mulish font input from google  */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+/* Rest CSS start  */
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+header,
+footer,
+section {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.container {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Rest CSS end  */
+/* Home page css start  */
+/* Header css start  */
+/* Header css end  */
+/* Home page css end  */
+
+body {
+  font-family: "Mulish", sans-serif;
+}
