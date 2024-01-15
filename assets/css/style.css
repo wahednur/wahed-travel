@@ -318,6 +318,25 @@ button .fa-solid {
     width: calc(100% - 32px);
   }
   /* header banner mobile support css end  */
+  /* Our popular tours section mobile support CSS start  */
+  .popular-section .tour-wrap {
+    flex-direction: column;
+  }
+  .tour-text,
+  .tour-img {
+    width: 100%;
+  }
+  .popular-section .tour-wrap .tour-text .btn {
+    margin-top: 24px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .mt-100,
+  .tour-img {
+    margin-top: 24px;
+  }
+  /* Our popular tours section mobile support CSS end  */
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .desk-nav-area {
