@@ -5,6 +5,7 @@
   --primary-color: #ff5400;
   --secondary-color: #131318;
   --white-color: #fff;
+  --paragraph-text-color: #5a5a5d;
 }
 /* CSS variable end  */
 
@@ -46,10 +47,40 @@ body {
 }
 
 /* Rest CSS end  */
+/* Global CSS start  */
+.section-title {
+  color: var(--secondary-color);
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+img {
+  width: 100%;
+}
+.btn {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: var(--primary-color);
+  padding: 15px 35px;
+  border-radius: 8px;
+  display: inline;
+}
+/* Global CSS end  */
 /* Home page css start  */
 /* Header css start  */
 .header-section {
   margin-top: 30px;
+}
+.body-pera {
+  color: var(--paragraph-text-color);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 .header-section .header-logo-menu-area {
   display: flex;
@@ -190,6 +221,41 @@ button .fa-solid {
 }
 /* Header Banner css end  */
 /* Header css end  */
+/* Our popular tours section CSS start  */
+.popular-section .tour-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 53;
+  width: 100%;
+}
+.tour-text,
+.tour-img {
+  width: calc(50% - 26.5px);
+  height: auto;
+}
+.tour-text ul li {
+  list-style: disc;
+  margin-bottom: 24px;
+}
+.tour-text p,
+.tour-text ul {
+  margin-top: 24px;
+}
+.tour-pera {
+  color: rgba(19, 19, 24, 0.7);
+}
+.popular-section .tour-wrap .tour-text p {
+  display: block;
+}
+.popular-section .tour-wrap .tour-text .btn {
+  display: inline;
+  margin-top: 32px;
+  float: left;
+}
+
+/* Our popular tours section CSS end  */
 /* Home page css end  */
 
 @media screen and (max-width: 600px) {
