@@ -4,7 +4,7 @@
 :root {
   --primary-color: #ff5400;
   --secondary-color: #131318;
-  --white-color:#fff;
+  --white-color: #fff;
 }
 /* CSS variable end  */
 
@@ -98,51 +98,93 @@ body {
 /* Menu area css end  */
 /* Header Banner css start  */
 .header-banner {
-    margin-top: 49px;
-background-image: url('../images/header-img.jpg');
-height: 500px;}
-.banner-overlay{
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  margin-top: 49px;
+  background-image: url("../images/header-img.jpg");
+  height: 500px;
 }
-.header-banner .banner-content-wrap{
-    color: var(--white-color);
-    text-align: center;
-    width: 800px;
+.banner-overlay {
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
-.header-banner .banner-content-wrap .banner-title{
-    color: var(--white-color);
-font-family: Mulish;
-font-size: 64px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-margin-bottom: 24px;
+.header-banner .banner-content-wrap {
+  color: var(--white-color);
+  text-align: center;
+  width: 800px;
 }
-.header-banner .banner-content-wrap .body-pera{
-    width: calc(100% - 124px);
-    display: block;
-    margin-bottom: 48px;
-    color: var(--white-color);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+.header-banner .banner-content-wrap .banner-title {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 24px;
 }
-.header-banner .banner-content-wrap .search-group{
-    border-radius: 8px;
-background: rgba(255, 255, 255, 0.30);
-height: 84px;
-display:block;
+.header-banner .banner-content-wrap .body-pera {
+  width: calc(100% - 124px);
+  display: block;
+  margin-bottom: 48px;
+  color: var(--white-color);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.header-banner .banner-content-wrap .search-group {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 84px;
+  display: block;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+input,
+select,
+button {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+input::placeholder,
+select#when,
+select#select {
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-right: 16px solid transparent;
+}
+button {
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+button .fa-solid {
+  margin-right: 8px;
 }
 /* Header Banner css end  */
 /* Header css end  */
@@ -196,7 +238,6 @@ display:block;
   .mbl-nav:hover {
     color: var(--primary-color);
   }
-}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
