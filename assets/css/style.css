@@ -278,6 +278,13 @@ button .fa-solid {
   .mbl-nav:hover {
     color: var(--primary-color);
   }
+  /* Header banner section Tap support css start  */
+  input,
+  select,
+  button {
+    width: 159px;
+  }
+  /* Header banner section Tap support css end  */
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
