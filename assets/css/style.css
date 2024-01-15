@@ -278,34 +278,6 @@ button .fa-solid {
     "sri sri sri sri usa usa usa usa usa kas kas kas"
     "bd bd bd bd bd ban ban ban ban ban ban ban";
 }
-/* .grid-item-1 {
-  grid-column: 1 / span 6;
-  grid-row: 1 / span 3;
-}
-.grid-item-2 {
-  grid-column: 7 / span 6;
-  grid-row: 1 / span 2;
-}
-.grid-item-3 {
-  grid-column: 1 / span 4;
-  grid-row: 3 / span 5;
-}
-.grid-item-4 {
-  grid-column: 5 / span 5;
-  grid-row: 3 / span 5;
-}
-.grid-item-5 {
-  grid-column: 10 / span 3;
-  grid-row: 3 / span 5;
-}
-.grid-item-6 {
-  grid-column: 1 / span 5;
-  grid-row: 5 / span 7;
-}
-.grid-item-7 {
-  grid-column: 6 / span 7;
-  grid-row: 5 / span 7;
-} */
 
 .grid-item-1 {
   grid-area: mal;
@@ -410,6 +382,21 @@ button .fa-solid {
     margin-top: 24px;
   }
   /* Our popular tours section mobile support CSS end  */
+  /* Choose Your Destination mobile support CSS start  */
+  .destination-sec .dest-text-content p {
+    width: 100%;
+  }
+  .destination-sec .dest-grid {
+    grid-template-areas:
+      "mal"
+      "indo"
+      "sri"
+      "usa"
+      "kas"
+      "bd"
+      "ban";
+  }
+  /* Choose Your Destination mobile support CSS end  */
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .desk-nav-area {
