@@ -101,6 +101,8 @@ body {
   margin-top: 49px;
   background-image: url("../images/header-img.jpg");
   height: 500px;
+  background-size: cover;
+  background-position: center center;
 }
 .banner-overlay {
   border-radius: 16px;
@@ -212,6 +214,44 @@ button .fa-solid {
   .mbl-nav:hover {
     color: var(--primary-color);
   }
+  /* header banner mobile support css start  */
+  .header-banner {
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 18px;
+  }
+  .header-banner .banner-content-wrap .banner-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .header-banner .banner-content-wrap .body-pera {
+    width: 100%;
+  }
+  .banner-overlay {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 16px;
+  }
+  .header-banner .banner-content-wrap {
+    width: 100%;
+    margin: 32px 0;
+  }
+  .header-banner .banner-content-wrap .search-group {
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  input,
+  select,
+  button {
+    width: calc(100% - 32px);
+  }
+  /* header banner mobile support css end  */
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .desk-nav-area {
