@@ -40,7 +40,6 @@ section {
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #ff5400;
 }
 body {
   font-family: "Mulish", sans-serif;
@@ -576,6 +575,60 @@ button .fa-solid {
 /* Newsletter section CSS end  */
 /* Home page css end  */
 
+/* Footer section css start  */
+.footer {
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer .footer-content {
+  text-align: center;
+}
+.footer-content {
+  padding: 100px 0px;
+  text-align: center;
+}
+.footer .footer-content .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  gap: 16px;
+  margin-bottom: 15px;
+}
+.footer .footer-content .footer-logo:hover {
+  filter: grayscale(1);
+  transition: all ease-in-out 300ms;
+}
+.footer .footer-content .footer-logo span {
+  color: var(--primary-color);
+}
+.footer .footer-content .footer-logo img {
+  width: 50px;
+}
+.footer .footer-content p {
+  width: 769px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.footer .footer-content .social-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 51px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.footer .footer-content .social-icon a {
+  color: var(--secondary-color);
+  transition: all ease-in-out 300ms;
+}
+.footer .footer-content .social-icon a:hover {
+  color: var(--primary-color);
+}
+/* Footer section css end */
+
 @media screen and (max-width: 600px) {
   .desk-nav-area {
     display: none;
@@ -744,6 +797,11 @@ button .fa-solid {
     bottom: 38px;
   }
   /* Newsletter section css end  */
+  /* Footer css start  */
+  .footer .footer-content p {
+    width: 100%;
+  }
+  /* Footer css end  */
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .desk-nav-area {
@@ -814,6 +872,9 @@ button .fa-solid {
   }
   .newsletter-section .news-wrap .news-img {
     flex-basis: 100%;
+  }
+  .footer .footer-content p {
+    width: calc(100% - 50px);
   }
 }
 
