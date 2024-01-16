@@ -76,6 +76,10 @@ img {
   padding: 15px 35px;
   border-radius: 8px;
   display: inline;
+  transition: all ease-in-out 300ms;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
 }
 /* Global CSS end  */
 /* Home page css start  */
@@ -129,6 +133,10 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
+}
+.deals-section .deal-item .price-wrap .btn {
+  float: left;
+  margin-top: 24px;
 }
 .desk-nav li a.active {
   color: var(--primary-color);
@@ -224,6 +232,10 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all ease-in-out 300ms;
+}
+button:hover {
+  background-color: var(--secondary-color);
 }
 button .fa-solid {
   margin-right: 8px;
@@ -411,7 +423,6 @@ button .fa-solid {
   backdrop-filter: blur(2.5px);
   padding: 50px;
   width: 579px;
-  height: 389px;
   margin: 56px;
 }
 
