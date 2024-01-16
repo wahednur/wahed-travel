@@ -402,6 +402,7 @@ button .fa-solid {
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
+  margin-bottom: 48px;
 }
 .deals-section .deal-item {
   display: block;
@@ -992,6 +993,10 @@ button .fa-solid {
   .feature-section .fe-content-wrap .feature-item {
     flex-basis: 34%;
     border: none;
+  }
+  .price-wrap .content .content-title {
+    margin-top: 26px;
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
