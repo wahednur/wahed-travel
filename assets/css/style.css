@@ -794,6 +794,10 @@ button .fa-solid {
     align-items: flex-end;
     justify-content: center;
   }
+  .price-wrap .content .content-title {
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
   .deals-section .deal-item .price-wrap {
     height: auto;
   }
@@ -939,6 +943,10 @@ button .fa-solid {
   .feature-section .fe-content-wrap .feature-item {
     border: none;
   }
+  .price-wrap .content .content-title {
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
@@ -960,6 +968,7 @@ button .fa-solid {
   .deals-section .deal-container .deal-item:nth-child(odd) .price-wrap {
     float: right;
   }
+
   .deals-section .deal-item .price-wrap {
     float: left;
   }
@@ -1002,5 +1011,9 @@ button .fa-solid {
   }
   .deals-section .deal-container .deal-item:nth-child(odd) .price-wrap {
     float: right;
+  }
+  .price-wrap .content .content-title {
+    margin-top: 26px;
+    margin-bottom: 16px;
   }
 }
