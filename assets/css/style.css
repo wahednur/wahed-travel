@@ -75,7 +75,7 @@ img {
   background-color: var(--primary-color);
   padding: 15px 35px;
   border-radius: 8px;
-  display: inline;
+  display: inline-block;
   transition: all ease-in-out 300ms;
 }
 .btn:hover {
@@ -416,7 +416,12 @@ button .fa-solid {
 }
 .deal-container {
   width: 100%;
+  text-align: center;
 }
+.deal-container .btn {
+  margin-top: 38px;
+}
+
 .deals-section .deal-item .price-wrap {
   border-radius: 16px;
   border: 2px solid #fff;
@@ -810,6 +815,9 @@ button .fa-solid {
   }
   .deals-section .text-content .body-pera {
     width: 100%;
+  }
+  .deal-container .btn {
+    margin-top: 10px;
   }
 
   .perfect-place .fre-place-wrap .text-content,
