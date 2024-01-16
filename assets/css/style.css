@@ -755,6 +755,9 @@ button .fa-solid {
       "bd"
       "ban";
   }
+  .destination-sec .dest-grid a {
+    width: 100%;
+  }
   /* Choose Your Destination mobile support CSS end  */
   /* Why choose us section mobile device support css start  */
   .choose-us-section .text-section .sec-pera {
