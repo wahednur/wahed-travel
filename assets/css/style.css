@@ -56,8 +56,17 @@ body {
   font-weight: 800;
   line-height: normal;
 }
+.content-title {
+  color: var(--secondary-color);
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+}
 img {
   width: 100%;
+}
+.icon {
+  width: 64px;
 }
 .btn {
   color: var(--white-color);
@@ -321,7 +330,6 @@ button .fa-solid {
   align-items: center;
   color: var(--white-color);
   text-align: center;
-  font-family: Mulish;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
@@ -336,6 +344,126 @@ button .fa-solid {
 }
 
 /* Choose Your Destination section end  */
+/* Why Choose Us section start  */
+
+.choose-us-section .text-section {
+  text-align: center;
+}
+.choose-us-section .text-section .sec-pera {
+  width: 643px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.choose-us-section .chose-cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+.choose-us-section .chose-cart-container .cart-item {
+  flex-basis: 572px;
+  padding: 32px;
+}
+.choose-us-section .chose-cart-container .cart-item .content-title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.choose-us-section .chose-cart-container .cart-item:nth-child(odd) {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.choose-us-section .chose-cart-container .cart-item:nth-child(even) {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+/* Why Choose Us section end  */
+/* Deals and discount section start  */
+.deals-section .text-content {
+  text-align: center;
+}
+.deals-section .text-content .body-pera {
+  width: 643px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+.deals-section .deal-item {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.deals-section .deal-item:last-child {
+  margin-bottom: 0;
+}
+.deal-container {
+  width: 100%;
+}
+.deals-section .deal-item .price-wrap {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  padding: 50px;
+  width: 579px;
+  height: 389px;
+  margin: 56px;
+}
+
+.deals-section .deal-container .deal-item:nth-child(even) .price-wrap {
+  float: left;
+}
+.deals-section .deal-container .deal-item:nth-child(odd) .price-wrap {
+  float: right;
+}
+
+.deals-section .deal-item .bg-1 {
+  background-image: url("../images/deals-tour-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.deals-section .deal-item .bg-2 {
+  background-image: url("../images/drals-tours-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.deals-section .deal-item .bg-3 {
+  background-image: url("../images/deal-tour-3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.deals-section .deal-item .price-wrap .time-date {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.deals-section .deal-item .price-wrap .time-date p {
+  color: var(--paragraph-text-color);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+}
+.deals-section .deal-item .price-wrap .time-date .fa-solid {
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+/* Deals and discount section end  */
 /* Home page css end  */
 
 @media screen and (max-width: 600px) {
@@ -432,6 +560,11 @@ button .fa-solid {
       "ban";
   }
   /* Choose Your Destination mobile support CSS end  */
+  /* Why choose us section mobile device support css start  */
+  .choose-us-section .text-section .sec-pera {
+    width: 100%;
+  }
+  /* Why choose us section mobile device support css end  */
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .desk-nav-area {
@@ -480,6 +613,9 @@ button .fa-solid {
     margin-top: 50px;
   }
   /* Our Popular tours section Tab support css end  */
+  .choose-us-section .chose-cart-container .cart-item {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {
@@ -492,6 +628,9 @@ button .fa-solid {
   .mobile-nav-area {
     display: none;
   }
+  .choose-us-section .chose-cart-container .cart-item {
+    flex-basis: 487px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .mobile-nav-area {
@@ -499,6 +638,8 @@ button .fa-solid {
   }
   .container {
     max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .mobile-nav-area {
     display: none;
