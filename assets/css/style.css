@@ -77,9 +77,11 @@ img {
   border-radius: 8px;
   display: inline-block;
   transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: var(--secondary-color);
+  cursor: pointer;
 }
 /* Global CSS end  */
 /* Home page css start  */
@@ -234,6 +236,7 @@ button {
   font-weight: 700;
   line-height: normal;
   transition: all ease-in-out 300ms;
+  cursor: pointer;
 }
 button:hover {
   background-color: var(--secondary-color);
